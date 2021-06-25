@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "281886882144",
+    "firebase_url": "https://statistik-probolinggo-default-rtdb.firebaseio.com",
+    "project_id": "statistik-probolinggo",
+    "storage_bucket": "statistik-probolinggo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281886882144:android:9b3fb4296f6f6c9789c605",
+        "android_client_info": {
+          "package_name": "com.bps.statistikprobolinggo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281886882144-do7llg8brav9deas5qd8umnd02n9rs2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZMLImBvHE3fjQtHIaZHivf9yQcfSf7Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281886882144-do7llg8brav9deas5qd8umnd02n9rs2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
