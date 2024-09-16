@@ -49,8 +49,6 @@
                         android:id="@+id/tanggal_berita"
                         android:paddingLeft="5dp"
                         android:paddingRight="5dp"
-                        android:layout_toEndOf="@+id/foto_berita"
-                        android:layout_toRightOf="@+id/foto_berita"
                         android:background="@color/md_grey_300"
                         android:textColor="@color/material_drawer_primary_text"
                         android:textAppearance="@style/TextAppearance.AppCompat.Caption"/>
@@ -66,8 +64,6 @@
                         android:background="@color/md_grey_300"
                         android:lines="3"
                         android:ellipsize="end"
-                        android:layout_toEndOf="@+id/foto_berita"
-                        android:layout_toRightOf="@+id/foto_berita"
                         android:layout_below="@+id/jenis_berita"/>
                 </RelativeLayout>
             </RelativeLayout>

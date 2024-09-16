@@ -40,14 +40,14 @@
             android:textColor="@color/material_drawer_primary_text"/>
     </LinearLayout>
 
-    <com.evrencoskun.tableview.TableView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/tabel"
-        app:column_header_height="@dimen/default_column_header_height"
-        app:row_header_width="@dimen/row_header_width"
-        app:shadow_color="@color/md_grey_300"
-        app:separator_color="@color/md_grey_300"
-        android:layout_below="@+id/control"/>
+<!--    <com.evrencoskun.tableview.TableView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:id="@+id/tabel"-->
+<!--        app:column_header_height="@dimen/default_column_header_height"-->
+<!--        app:row_header_width="@dimen/row_header_width"-->
+<!--        app:shadow_color="@color/md_grey_300"-->
+<!--        app:separator_color="@color/md_grey_300"-->
+<!--        android:layout_below="@+id/control"/>-->
 
 </RelativeLayout>

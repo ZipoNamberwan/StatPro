@@ -91,20 +91,20 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp">
 
-                    <androidx.appcompat.widget.AppCompatTextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Hubungi Kami - Chat Online"
-                        android:id="@+id/chat_text"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-                        android:layout_marginBottom="5dp"
-                        android:textStyle="bold"/>
+<!--                    <androidx.appcompat.widget.AppCompatTextView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="Hubungi Kami - Chat Online"-->
+<!--                        android:id="@+id/chat_text"-->
+<!--                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:textStyle="bold"/>-->
 
-                    <androidx.recyclerview.widget.RecyclerView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/recycler_view"
-                        android:layout_below="@+id/chat_text"/>
+<!--                    <androidx.recyclerview.widget.RecyclerView-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:id="@+id/recycler_view"-->
+<!--                        android:layout_below="@+id/chat_text"/>-->
 
                 </RelativeLayout>
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.bps.statistikprobolinggo">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:name=".MyApplication"
@@ -17,12 +17,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".about.AboutActivity"></activity>
-        <activity android:name=".infografis.ViewInfografisActivity"></activity>
+        <activity android:name=".about.AboutActivity" />
+        <activity android:name=".infografis.ViewInfografisActivity" />
 
         <provider
             android:name=".GenericFileProvider"
-            android:authorities="${applicationId}.com.bps.statistikprobolinggo.provider"
+            android:authorities="${applicationId}.com.bps.newstatpro.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -32,7 +32,7 @@
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -93,6 +93,7 @@
             android:name=".search.SearchResultActivity"
             android:label="@string/title_activity_search_result"
             android:launchMode="singleTop"
+            android:exported="true"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />

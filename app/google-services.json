@@ -8,6 +8,64 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:281886882144:android:4d10c9b8ab59a92989c605",
+        "android_client_info": {
+          "package_name": "com.bps.aksbpsprob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281886882144-do7llg8brav9deas5qd8umnd02n9rs2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZMLImBvHE3fjQtHIaZHivf9yQcfSf7Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281886882144-do7llg8brav9deas5qd8umnd02n9rs2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:281886882144:android:5f662feb73910da989c605",
+        "android_client_info": {
+          "package_name": "com.bps.newstatpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "281886882144-do7llg8brav9deas5qd8umnd02n9rs2a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZMLImBvHE3fjQtHIaZHivf9yQcfSf7Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "281886882144-do7llg8brav9deas5qd8umnd02n9rs2a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:281886882144:android:9b3fb4296f6f6c9789c605",
         "android_client_info": {
           "package_name": "com.bps.statistikprobolinggo"

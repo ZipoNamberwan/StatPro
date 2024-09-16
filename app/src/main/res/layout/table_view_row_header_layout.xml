@@ -21,7 +21,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="@dimen/row_header_width"
     android:layout_height="@dimen/cell_height"
-    android:paddingLeft="5dp"
     android:paddingStart="5dp"
     android:paddingEnd="5dp"
     android:paddingBottom="5dp">
@@ -39,7 +38,6 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textColor="@color/table_view_default_text_color"
             android:textStyle="bold"
             tools:text="Row Data"/>
 
@@ -48,6 +46,5 @@
     <View
         android:layout_width="1px"
         android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"/>
 </RelativeLayout>
