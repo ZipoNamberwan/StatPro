@@ -9,7 +9,7 @@ android {
         applicationId "com.bps.newstatpro"
         minSdkVersion 23
         targetSdkVersion 35
-        versionCode 3
+        versionCode 4
         versionName "1.1"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
