@@ -329,29 +329,26 @@ public class ViewChatAdminActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if(item.getItemId() == R.id.menu_sign_out) {
-            if(firebaseAuth.getCurrentUser() != null) {
-                updateUserInformation(userModel.getId(), userModel.getUsername(),
-                        userModel.getUrlPhoto(), System.currentTimeMillis(),
-                        false, false);
-            }
-            AuthUI.getInstance().signOut(this)
-                    .addOnCompleteListener(new OnCompleteListener<Void>() {
-                        @Override
-                        public void onComplete(@NonNull Task<Void> task) {
-                            Toast.makeText(ViewChatAdminActivity.this,
-                                    "You have been signed out.",
-                                    Toast.LENGTH_LONG)
-                                    .show();
-
-                            // Close activity
-                            finish();
-                        }
-                    });
-        } /*else if (item.getItemId() == R.id.menu_edit_profile){
-            Intent intent = new Intent(this, SettingsProfileActivity.class);
-            startActivity(intent);
-        }*/
+//        if(item.getItemId() == R.id.menu_sign_out) {
+//            if(firebaseAuth.getCurrentUser() != null) {
+//                updateUserInformation(userModel.getId(), userModel.getUsername(),
+//                        userModel.getUrlPhoto(), System.currentTimeMillis(),
+//                        false, false);
+//            }
+//            AuthUI.getInstance().signOut(this)
+//                    .addOnCompleteListener(new OnCompleteListener<Void>() {
+//                        @Override
+//                        public void onComplete(@NonNull Task<Void> task) {
+//                            Toast.makeText(ViewChatAdminActivity.this,
+//                                    "You have been signed out.",
+//                                    Toast.LENGTH_LONG)
+//                                    .show();
+//
+//                            // Close activity
+//                            finish();
+//                        }
+//                    });
+//        }
         return super.onOptionsItemSelected(item);
     }
 }
