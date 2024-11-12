@@ -355,30 +355,16 @@ public class AppUtils {
     }
 
     public static void share(Activity activity, String judul, String url) {
-        try
-        {
-            List<Intent> targetedShareIntents = new ArrayList<>();
-            Intent share = new Intent(Intent.ACTION_SEND);
-            share.setType("text/plain");
-            List<ResolveInfo> resInfo = activity.getPackageManager().queryIntentActivities(share, 0);
-            if (!resInfo.isEmpty()){
-                for (ResolveInfo info : resInfo) {
-                    Intent targetedShare = new Intent(Intent.ACTION_SEND);
-                    targetedShare.setType("text/plain");
-                    if (getShareApplication().contains(info.activityInfo.packageName.toLowerCase())) {
-                        targetedShare.putExtra(Intent.EXTRA_SUBJECT,judul);
-                        targetedShare.putExtra(Intent.EXTRA_TEXT,url);
-                        targetedShare.setPackage(info.activityInfo.packageName.toLowerCase());
-                        targetedShareIntents.add(targetedShare);
-                    }
-                }
-                Intent chooserIntent = Intent.createChooser(targetedShareIntents.remove(0), "Bagikan");
-                chooserIntent.putExtra(Intent.EXTRA_INITIAL_INTENTS, targetedShareIntents.toArray(new Parcelable[targetedShareIntents.size()]));
-                activity.startActivity(chooserIntent);
-            }
-        }
-        catch(Exception e){
-            e.printStackTrace();
+        Intent shareIntent = new Intent(Intent.ACTION_SEND);
+        shareIntent.setType("text/plain");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, url);
+
+        // Create a chooser to allow user to select an app
+        Intent chooser = Intent.createChooser(shareIntent, judul);
+
+        // Check if there's an app that can handle this intent
+        if (shareIntent.resolveActivity(activity.getPackageManager()) != null) {
+            activity.startActivity(chooser);
         }
     }
 

@@ -22,6 +22,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.bps.newstatpro.about.AboutActivity;
 import com.bps.newstatpro.infografis.InfografisFragment;
+import com.bps.newstatpro.search.SearchResultActivity;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
@@ -123,33 +124,28 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         MenuItem searchItem = menu.findItem(R.id.action_search);
-        SearchManager searchManager = (SearchManager) MainActivity.this.getSystemService(SEARCH_SERVICE);
+        SearchView searchView = (SearchView) searchItem.getActionView();
 
-        if (searchItem != null) {
-            SearchView searchView = (SearchView) searchItem.getActionView();
-            if (searchManager != null) {
-                SearchableInfo searchableInfo = searchManager.getSearchableInfo(getComponentName());
-                searchView.setSearchableInfo(searchableInfo);
-                searchView.setOnSearchClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        onSearchRequested();
-                    }
-                });
-                searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-                    @Override
-                    public boolean onQueryTextSubmit(String query) {
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                // Handle search on submit
+                Intent intent = new Intent(MainActivity.this, SearchResultActivity.class);
 
-                        return true;
-                    }
+                // Add data to the Intent
+                intent.putExtra("query", query);
 
-                    @Override
-                    public boolean onQueryTextChange(String newText) {
-                        return true;
-                    }
-                });
+                // Start the new activity
+                startActivity(intent);
+                return false;
             }
-        }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                // Handle search as user types
+                return false;
+            }
+        });
         return true;
     }
 

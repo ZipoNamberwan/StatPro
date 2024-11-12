@@ -47,17 +47,17 @@
                     android:text="Series"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
                     android:layout_centerVertical="true"/>
-                <androidx.appcompat.widget.AppCompatImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/save_grafik_button"
-                    android:layout_toLeftOf="@+id/more_grafik_button"
-                    android:layout_toStartOf="@+id/more_grafik_button"
-                    app:srcCompat="@drawable/baseline_save_24"
-                    style="@style/Widget.AppCompat.ImageButton"
-                    android:backgroundTint="@color/md_white_1000"
-                    android:tint="@color/primary"
-                    android:layout_centerVertical="true"/>
+<!--                <androidx.appcompat.widget.AppCompatImageButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/save_grafik_button"-->
+<!--                    android:layout_toLeftOf="@+id/more_grafik_button"-->
+<!--                    android:layout_toStartOf="@+id/more_grafik_button"-->
+<!--                    app:srcCompat="@drawable/baseline_save_24"-->
+<!--                    style="@style/Widget.AppCompat.ImageButton"-->
+<!--                    android:backgroundTint="@color/md_white_1000"-->
+<!--                    android:tint="@color/primary"-->
+<!--                    android:layout_centerVertical="true"/>-->
                 <androidx.appcompat.widget.AppCompatButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

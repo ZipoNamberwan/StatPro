@@ -300,7 +300,7 @@ public class IndikatorViewActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        saveGrafikButton = findViewById(R.id.save_grafik_button);
+//        saveGrafikButton = findViewById(R.id.save_grafik_button);
         verVarSpinner = findViewById(R.id.spinner_vervar);
         turVarSpinnerGrafik = findViewById(R.id.spinner_turvar_grafik);
 
@@ -320,17 +320,17 @@ public class IndikatorViewActivity extends AppCompatActivity {
             }
         });
 
-        saveGrafikButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String s = labelVar + " " + labelVerVar + " " + labelTurvarGrafik;
-                s = s.replaceAll("[[-+.^:,/$#]]","");
-                if (lineChart.saveToGallery(s)){
-                    Snackbar.make(v, "Grafik tersimpan di gallery", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-                }
-            }
-        });
+//        saveGrafikButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                String s = labelVar + " " + labelVerVar + " " + labelTurvarGrafik;
+//                s = s.replaceAll("[[-+.^:,/$#]]","");
+//                if (lineChart.saveToGallery(s)){
+//                    Snackbar.make(v, "Grafik tersimpan di gallery", Snackbar.LENGTH_LONG)
+//                            .setAction("Action", null).show();
+//                }
+//            }
+//        });
 
         judulTabel = findViewById(R.id.judul_tabel);
         tableLayout = findViewById(R.id.tabel);

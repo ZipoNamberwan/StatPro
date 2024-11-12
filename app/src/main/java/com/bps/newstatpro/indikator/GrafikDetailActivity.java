@@ -114,18 +114,18 @@ public class GrafikDetailActivity extends AppCompatActivity {
         });
 
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String s = labelVar + " " + labelVerVar + " " + labelTurvarGrafik + " detail";
-                s = s.replaceAll("[[-+.^:,/$#]]","");
-                if (lineChart.saveToGallery(s)){
-                    Snackbar.make(view, "Grafik tersimpan di gallery", Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-                }
-            }
-        });
+//        FloatingActionButton fab = findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                String s = labelVar + " " + labelVerVar + " " + labelTurvarGrafik + " detail";
+//                s = s.replaceAll("[[-+.^:,/$#]]","");
+//                if (lineChart.saveToGallery(s)){
+//                    Snackbar.make(view, "Grafik tersimpan di gallery", Snackbar.LENGTH_LONG)
+//                            .setAction("Action", null).show();
+//                }
+//            }
+//        });
     }
 
     private void setUpDataGrafik(JSONObject jsonObject, String idVerVar, String idTurvar) throws JSONException {
