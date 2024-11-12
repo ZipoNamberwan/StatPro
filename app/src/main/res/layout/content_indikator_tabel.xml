@@ -51,22 +51,20 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/filter_button"
-                    android:layout_toLeftOf="@+id/more_tabel_button"
-                    android:layout_toStartOf="@+id/more_tabel_button"
                     app:srcCompat="@drawable/baseline_filter_list_24"
                     style="@style/Widget.AppCompat.ImageButton"
                     android:backgroundTint="@color/md_white_1000"
                     android:tint="@color/primary"
                     android:layout_centerVertical="true"/>
-                <androidx.appcompat.widget.AppCompatButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/more_tabel_button"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentEnd="true"
-                    android:text="@string/more"
-                    style="@style/Widget.AppCompat.Button.Borderless"
-                    android:textColor="@color/primary"/>
+<!--                <androidx.appcompat.widget.AppCompatButton-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/more_tabel_button"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:text="@string/more"-->
+<!--                    style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                    android:textColor="@color/primary"/>-->
             </RelativeLayout>
 
             <androidx.appcompat.widget.AppCompatTextView

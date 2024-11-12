@@ -342,16 +342,16 @@ public class IndikatorViewActivity extends AppCompatActivity {
             }
         });
 
-        moreTabelButton = findViewById(R.id.more_tabel_button);
-        moreTabelButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), TabelDetailActivity.class);
-                i.putExtra(TabelDetailActivity.ID_VAR, idVar);
-                i.putExtra(TabelDetailActivity.JSON_STRING, jsonObject.toString());
-                startActivity(i);
-            }
-        });
+//        moreTabelButton = findViewById(R.id.more_tabel_button);
+//        moreTabelButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent i = new Intent(getApplicationContext(), TabelDetailActivity.class);
+//                i.putExtra(TabelDetailActivity.ID_VAR, idVar);
+//                i.putExtra(TabelDetailActivity.JSON_STRING, jsonObject.toString());
+//                startActivity(i);
+//            }
+//        });
     }
 
     private void setUpDataTabel(JSONObject jsonObject, String tahunId, String turTahunId, String turVarId) throws JSONException {

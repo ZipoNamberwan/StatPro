@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowHomeEnabled(true);
             getSupportActionBar().setIcon(R.drawable.ic_bps_launcher);
-            getSupportActionBar().setSubtitle(R.string.subtitle);
+//            getSupportActionBar().setSubtitle(R.string.subtitle);
         }
 
         IndikatorFragment indikatorFragment = new IndikatorFragment();
